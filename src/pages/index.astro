@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import {obtenerFraseAleatoria}  from '../utils.js';
 ---
 
 <Layout title="Welcome to Luchito.">
@@ -8,10 +8,12 @@ import Card from '../components/Card.astro';
 		
 		<h1>Welcome to <span class="text-gradient">Luchito's</span></h1>
 		<p class="instructions">
-			Acá en algun momento habrá cosas interesantes!
+			<b>Frase del Día:</b> {obtenerFraseAleatoria().frase}
 		</p>
 	</main>
 </Layout>
+
+  
 
 <style>
 	main {

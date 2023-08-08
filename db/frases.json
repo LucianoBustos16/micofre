@@ -1,0 +1,56 @@
+[
+    {
+      "categoria": "Diseño Ux",
+      "titulo": "Investigación de usuarios",
+      "frase": "Comprende las necesidades y deseos de tus usuarios antes de comenzar a diseñar en Figma."
+    },
+    {
+      "categoria": "Diseño Ux",
+      "titulo": "Mapas de empatía",
+      "frase": "Crea mapas de empatía para visualizar las emociones y experiencias de los usuarios y guiar tus decisiones de diseño en Figma."
+    },
+    {
+      "categoria": "Diseño UI",
+      "titulo": "Jerarquía visual",
+      "frase": "Utiliza tamaños, colores y tipografía para establecer una jerarquía clara en tus diseños en Figma."
+    },
+    {
+      "categoria": "Diseño UI",
+      "titulo": "Espacio en blanco",
+      "frase": "Aprovecha el espacio en blanco para mejorar la legibilidad y el aspecto limpio de tus diseños en Figma."
+    },
+    {
+      "categoria": "Diseño UI",
+      "titulo": "Rejillas y alineación",
+      "frase": "Utiliza rejillas y guías para mantener la alineación y coherencia en tus diseños en Figma."
+    },
+    {
+      "categoria": "Escritura de UX",
+      "titulo": "Microinteracciones",
+      "frase": "Utiliza microcopias en botones, mensajes de error y otros elementos interactivos para guiar a los usuarios."
+    },
+    {
+      "categoria": "Escritura de UX",
+      "titulo": "Lenguaje claro",
+      "frase": "Escribe de manera simple y concisa para que los usuarios comprendan fácilmente la información en tus diseños en Figma."
+    },
+    {
+      "categoria": "Escritura de UX",
+      "titulo": "CTAs efectivos",
+      "frase": "Crea llamadas a la acción (CTAs) claras y atractivas que indiquen claramente la acción que deben realizar."
+    },
+    {
+      "categoria": "Integración de Figma",
+      "titulo": "Prototipado realista",
+      "frase": "Agrega transiciones y animaciones en Figma para simular una experiencia de usuario realista."
+    },
+    {
+      "categoria": "Integración de Figma",
+      "titulo": "Iteración y pruebas",
+      "frase": "Utiliza comentarios y prototipos para iterar tus diseños, y realiza pruebas de usuario para validar tus conceptos."
+    }
+  ]
+  
+
+
+  
