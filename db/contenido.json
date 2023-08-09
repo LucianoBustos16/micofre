@@ -1,0 +1,16 @@
+[
+    {
+        "category": "Frameworks",
+        "name": "Tailwind",
+        "description": "Comprende las necesidades y deseos de tus usuarios antes de comenzar a diseñar en Figma.",
+        "logo": "",
+        "link": "https://tailwindcss.com/"
+    },
+    {
+        "category": "Frameworks",
+        "name": "Bootstrap",
+        "description": "Comprende las necesidades y deseos de tus usuarios antes de comenzar a diseñar en Figma.",
+        "logo": "",
+        "link": "https://getbootstrap.com/"
+    }
+]

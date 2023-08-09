@@ -1,7 +1,9 @@
-import frasesData from '../db/frases.json';
+import contenidoData from '../db/contenido.json';
+
 
 export function obtenerFraseAleatoria() {
-  const frases = frasesData; // No es necesario acceder a frasesData.frases
-  const indiceAleatorio = Math.floor(Math.random() * frases.length);
-  return frases[indiceAleatorio];
+  const contenido = contenidoData; // No es necesario acceder a contenidoData.contenido
+  const indiceAleatorio = Math.floor(Math.random() * contenido.length);
+  return contenido[indiceAleatorio];
 }
+
