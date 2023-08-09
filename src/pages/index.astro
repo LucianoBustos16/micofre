@@ -1,4 +1,5 @@
 ---
+import Card from '../components/Card.astro';
 import Layout from '../layouts/Layout.astro';
 import {obtenerFraseAleatoria}  from '../utils.js';
 ---
@@ -6,11 +7,73 @@ import {obtenerFraseAleatoria}  from '../utils.js';
 <Layout title="Welcome to Luchito.">
 	<main>
 		
-		<h1>Welcome to <span class="text-gradient">Luchito's</span></h1>
+		<h1 class="text-3xl font-bold">Welcome to <span class="text-gradient">Luchito's</span></h1>
+
 		<p class="instructions">
 			<b>Frase del Día:</b> {obtenerFraseAleatoria().frase}
 		</p>
+
+		
+<form>   
+    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <div class="relative">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+        </div>
+        <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Mockups, Logos..." required>
+        <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+    </div>
+</form>
+
 	</main>
+
+	
+	<ul role="list" class="link-card-grid" id="card-list">
+		<Card
+			href="https://docs.astro.build/"
+			title="Documentation"
+			body="Learn how Astro works and explore the official API docs."
+		/>
+		<Card
+			href="https://astro.build/integrations/"
+			title="Integrations"
+			body="Supercharge your project with new frameworks and libraries."
+		/>
+		<Card
+			href="https://astro.build/themes/"
+			title="Themes"
+			body="Explore a galaxy of community-built starter themes."
+		/>
+		<Card
+			href="https://astro.build/chat/"
+			title="Community"
+			body="Come say hi to our amazing Discord community. ❤️"
+		/>
+	</ul>
+ 
+	<script>
+		const cardList = document.getElementById('card-list'); // Obtener la lista de tarjetas
+		const searchInput = document.getElementById('default-search'); // Obtener el campo de búsqueda
+	
+		searchInput.addEventListener('input', function(event) {
+			const searchTerm = event.target.value.toLowerCase(); // Obtener el término de búsqueda en minúsculas
+	
+			// Iterar a través de las tarjetas y mostrar/ocultar según el término de búsqueda
+			cardList.querySelectorAll('.link-card').forEach(card => {
+				const title = card.querySelector('.card-title').textContent.toLowerCase();
+				const body = card.querySelector('.card-body').textContent.toLowerCase();
+				if (title.includes(searchTerm) || body.includes(searchTerm)) {
+					card.style.display = 'block';
+				} else {
+					card.style.display = 'none';
+				}
+			});
+		});
+	</script>
+	
+	
 </Layout>
 
   
