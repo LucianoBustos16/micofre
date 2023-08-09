@@ -12,6 +12,7 @@ const { href, title, body } = Astro.props;
 
 <li class="link-card">
 	<a href={href}>
+		<img src='/assets/logos/tailwind.svg' alt="">
 		<h2 class="card-title">
 			{title}
 			<span>&rarr;</span>
@@ -19,6 +20,7 @@ const { href, title, body } = Astro.props;
 		<p class="card-body">{body}</p>
 	</a>
 </li>
+
 <style>
 	.link-card {
 		list-style: none;
