@@ -12,5 +12,12 @@
         "description": "Esta es la descripción de bootstrap.",
         "logo": "",
         "link": "https://getbootstrap.com/"
+    },
+    {
+        "category": "Frameworks",
+        "name": "FlatIcons",
+        "description": "Esta es la descripción de FlatIcon.",
+        "logo": "",
+        "link": "https://www.flaticon.com/"
     }
 ]
