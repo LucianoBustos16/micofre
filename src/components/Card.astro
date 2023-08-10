@@ -43,17 +43,35 @@ const { href, title, body } = Astro.props;
 </li>
 
 <script is:inline>
-	function copyLink(button) {
-	  const link = button.getAttribute('data-link');
+    function copyLink(button) {
+        const link = button.getAttribute('data-link');
 
-	  const dummyInput = document.createElement('input');
-	  dummyInput.value = link;
-	  document.body.appendChild(dummyInput);
-	  dummyInput.select();
-	  document.execCommand('copy');
-	  document.body.removeChild(dummyInput);
-  
-	  // Puedes agregar un mensaje para indicar que se ha copiado la URL
-	 console.log('URL copiada: ' + link);
-	}
-  </script>
+        if (link) {
+            const dummyInput = document.createElement('input');
+            dummyInput.value = link;
+            document.body.appendChild(dummyInput);
+            dummyInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummyInput);
+
+            // Crear el elemento del toast
+            const toast = document.createElement('div');
+            toast.id = 'toast-simple';
+            toast.className = 'flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800';
+            toast.role = 'alert';
+            toast.innerHTML = `
+                <div class="text-sm font-normal">🎉 Link copiado con exito!</div>
+            `;
+
+            // Agregar el toast al contenedor
+            const toastContainer = document.getElementById('toast-container');
+            toastContainer.appendChild(toast);
+
+            // Remover el toast después de un tiempo
+            setTimeout(() => {
+                toastContainer.removeChild(toast);
+            }, 5000); // Remover el toast después de 5 segundos (ajusta este valor según tus necesidades)
+        }
+    }
+</script>
+
