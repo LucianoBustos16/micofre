@@ -1,24 +1,22 @@
 ---
 import Card from '../components/Card.astro';
+import Consejos from '../components/Consejos.astro';
 import Layout from '../layouts/Layout.astro';
-import {obtenerFraseAleatoria}  from '../utils.js';
 import data from '../../db/contenido.json';
 ---
 
 <Layout title="Welcome to Luchito.">
 	<main>
 		<div class="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
-		<h1 class="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white">Welcome to <span class="text-gradient">Luchito's</span></h1>
+		<h1 class="text-slate-900 font-semibold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white">Welcome to <span class="text-sky-500 font-extrabold dark:text-sky-400">Luchito's</span></h1>
 
 		
 
 
 
+
 		<section class="text-center px-8 my-20 sm:mt-32 md:my-40">
-			<div class="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-				<h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">{obtenerFraseAleatoria().titulo}</h5>
-				<p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">{obtenerFraseAleatoria().frase}</p>
-			</div>
+			<Consejos />
 
 		</section>
 
@@ -31,7 +29,7 @@ import data from '../../db/contenido.json';
 						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
 					</svg>
 				</div>
-				<input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border  border-gray-300 rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Mockups, Logos..." required>
+				<input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border  border-gray-300 rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Buscar frameworks, iconos..." required>
 				
 			</div>
 		</form>
