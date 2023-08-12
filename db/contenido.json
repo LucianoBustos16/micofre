@@ -12,9 +12,9 @@
         "link": "https://getbootstrap.com/"
     },
     {
-        "category": "Frameworks",
+        "category": "Iconos",
         "name": "FlatIcons",
-        "description": "Esta es la descripción de FlatIcon.",        
+        "description": "Ofrece una amplia colección de íconos y recursos visuales en un estilo plano y moderno. La plataforma proporciona una variedad de categorías de íconos y ofrece opciones de personalización, como tamaños y formatos de archivo, para adaptarse a las necesidades de diseño de los usuarios.",        
         "link": "https://www.flaticon.com/"
     }
     ,
@@ -22,5 +22,12 @@
         "category": "Frameworks",
         "name": "Atropos",
         "description": "Atropos es una biblioteca ligera, gratuita y de código abierto en JavaScript para crear sorprendentes efectos de desplazamiento en 3D con paralaje y sensibilidad al tacto..",        "link": "https://atroposjs.com/"
+    }
+    ,
+    {
+        "category": "Colores",
+        "name": "BrandColors",
+        "description": "La colección más grande de códigos de colores de marcas oficiales.",
+        "link": "https://brandcolors.net/"
     }
 ]
