@@ -1,8 +1,8 @@
 ---
-import Card from '../components/Card.astro';
 import Consejos from '../components/Consejos.astro';
 import Layout from '../layouts/Layout.astro';
 import data from '../../db/contenido.json';
+import CardList from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Luchito.">
@@ -18,6 +18,8 @@ import data from '../../db/contenido.json';
 		<section class="text-center px-8 my-20 sm:mt-32 md:my-40">
 			<Consejos />
 
+			
+
 		</section>
 
 		<section class=" px-8 my-20 sm:mt-32 md:my-40">
@@ -30,18 +32,18 @@ import data from '../../db/contenido.json';
 					</svg>
 				</div>
 				<input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border  border-gray-300 rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Buscar frameworks, iconos..." required>
-				
 			</div>
 		</form>
 
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-			<ul role="list" class="link-card-grid flex flex-col gap-4" id="card-list">
+		<div class="grid grid-cols-1">
 
-				{data.map(({ name, description, link }) => (
-					<Card
+			<ul role="list" class="grid grid-cols-1 md:grid-cols-3 gap-4" id="card-list">
+				{data.map(({ name, description, link, category }) => (
+					<CardList
 					href={link}
 					title={name}
 					body={description}
+					category={category}
 				/>
 				))}
 			</ul>
@@ -61,10 +63,10 @@ import data from '../../db/contenido.json';
 
 
  
-	<script>
+	<script is:inline>
 		const cardList = document.getElementById('card-list'); // Obtener la lista de tarjetas
 		const searchInput = document.getElementById('default-search'); // Obtener el campo de búsqueda
-	
+
 		searchInput.addEventListener('input', function(event) {
 			const searchTerm = event.target.value.toLowerCase(); // Obtener el término de búsqueda en minúsculas
 	
@@ -79,6 +81,37 @@ import data from '../../db/contenido.json';
 				}
 			});
 		});
+
+		function copyLink(button) {
+        const link = button.getAttribute('data-link');
+
+        if (link) {
+            const dummyInput = document.createElement('input');
+            dummyInput.value = link;
+            document.body.appendChild(dummyInput);
+            dummyInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummyInput);
+
+            // Crear el elemento del toast
+            const toast = document.createElement('div');
+            toast.id = 'toast-simple';
+            toast.className = 'flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800';
+            toast.role = 'alert';
+            toast.innerHTML = `
+                <div class="text-sm font-normal">🎉 Link copiado con exito!</div>
+            `;
+
+            // Agregar el toast al contenedor
+            const toastContainer = document.getElementById('toast-container');
+            toastContainer.appendChild(toast);
+
+            // Remover el toast después de un tiempo
+            setTimeout(() => {
+                toastContainer.removeChild(toast);
+            }, 5000); // Remover el toast después de 5 segundos (ajusta este valor según tus necesidades)
+        }
+    }
 	</script>
 
 	
