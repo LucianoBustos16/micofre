@@ -12,12 +12,14 @@ const { href, title, body, category } = Astro.props;
 <div
     class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
   >
+
     <img
       class="object-cover rounded-t-lg h-16 md:h-auto w-16 md:rounded-none md:rounded-l-lg"
       src=`/assets/logos/${title}.svg`
       alt=`Logo de ${title}`
     />
-	<span class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">{category}</span>
+	<!-- <span class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">{category}</span> -->
+
 
     <a href={href}>
       <h5
