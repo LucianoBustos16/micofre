@@ -1,41 +1,37 @@
 ---
 import {obtenerFraseAleatoria}  from '../utils.js';
-import Copybutton from '../components/Copybutton.astro';
+import frases from '../../db/frases.json';
 
+function shuffleArray(array) {
+  const shuffledArray = [...array];
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+}
 
+const frasesAleatorias = shuffleArray(frases).slice(0, 1);
 ---
 
-		<div class='atropos my-atropos relative'>
-			<div class='atropos-scale'>
-				<div class='atropos-rotate'>
-					<div class={`atropos-inner relative`}>
-
-
-            <figure class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
-              <!-- <img class="w-24 h-24 rounded-full mx-auto" src="/sarah-dayan.jpg" alt="" width="384" height="512"> -->
-              <div class="pt-6 text-center space-y-4">
-                <blockquote>
-                <p class="text-lg font-medium">
-                  {obtenerFraseAleatoria().frase}
-                </p>
-                </blockquote>
-                <figcaption class="font-medium">
-                <div class="text-sky-500 dark:text-sky-400">
-                  {obtenerFraseAleatoria().titulo}
-                </div>
-                <div class="flex justify-center text-slate-700 dark:text-slate-500">
+		
+    {      
+    frasesAleatorias.map(({ categoria, titulo, frase }) => (
+      <figure class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
+        <div class="pt-6 text-center space-y-4">
+          <div class="text-sky-500 dark:text-sky-400">
+            <p>{titulo}</p>
+          </div>
+          <div class="flex justify-center text-slate-700 dark:text-slate-500">
                   <span class="flex items-center text-sm font-medium text-gray-900 dark:text-white">
                     <span class="flex w-2.5 h-2.5 bg-purple-500 rounded-full mr-1.5 flex-shrink-0"></span>
-                    {obtenerFraseAleatoria().categoria}
+                    {categoria}
                   </span>
                 </div>
-                </figcaption>
-              </div>
-              </figure>
+          <blockquote>
+                <p class="text-lg font-medium"> {frase} </p>
+          </blockquote>
+         </div>
 
-
-					</div>
-				</div>
-			</div>
-
-		</div>
+      </figure>
+      ))}

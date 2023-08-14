@@ -1,0 +1,18 @@
+---
+import Card from '../components/Card.astro';
+import data from '../../db/contenido.json';
+
+const { href, title, body, category } = Astro.props;
+---
+
+{data.map(({ name, description, link, category }) => (
+<li class="link-card">
+  
+  <Card
+					href={link}
+					title={name}
+					body={description}
+					category={category}
+				/>
+</li>
+))}
