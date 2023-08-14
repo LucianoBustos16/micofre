@@ -54,6 +54,13 @@ import Navbar from '../components/Navbar.astro';
 			</div>
 		</form>
 
+		<div id="no-results" class="mt-2 hidden">
+			  <div class="p-4 mb-4 text-sm text-center text-blue-800 rounded-lg bg-blue-100 dark:bg-gray-800 dark:text-blue-400" role="alert">
+				<span class="font-medium">F Ameo!</span> No encontramos resultados.
+			  </div>
+		</div>
+
+
 		<div class="grid grid-cols-1">
 
 			<ul role="list" class="grid grid-cols-1 md:grid-cols-3 gap-4" id="card-list">
@@ -78,20 +85,31 @@ import Navbar from '../components/Navbar.astro';
 	<script is:inline>
 		const cardList = document.getElementById('card-list'); // Obtener la lista de tarjetas
 		const searchInput = document.getElementById('default-search'); // Obtener el campo de búsqueda
+		const noResultsMessage = document.getElementById('no-results'); 
 
 		searchInput.addEventListener('input', function(event) {
 			const searchTerm = event.target.value.toLowerCase(); // Obtener el término de búsqueda en minúsculas
-	
+			let hasResults = false;
+
 			// Iterar a través de las tarjetas y mostrar/ocultar según el término de búsqueda
 			cardList.querySelectorAll('.link-card').forEach(card => {
 				const title = card.querySelector('.card-title').textContent.toLowerCase();
 				const body = card.querySelector('.card-body').textContent.toLowerCase();
+
 				if (title.includes(searchTerm) || body.includes(searchTerm)) {
 					card.style.display = 'block';
+					hasResults = true;
 				} else {
 					card.style.display = 'none';
 				}
 			});
+			// Mostrar u ocultar el mensaje de no resultados
+			if (hasResults) {
+            noResultsMessage.style.display = 'none';
+        } else {
+            noResultsMessage.style.display = 'block';
+        }
+			
 		});
 
 		function copyLink(button) {
@@ -108,7 +126,7 @@ import Navbar from '../components/Navbar.astro';
             // Crear el elemento del toast
             const toast = document.createElement('div');
             toast.id = 'toast-simple';
-            toast.className = 'flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800';
+            toast.className = 'flex items-center bg-green-700 w-full max-w-xs p-4 space-x-4 text-white divide-x divide-gray-200 rounded-lg shadow space-x';
             toast.role = 'alert';
             toast.innerHTML = `
                 <div class="text-sm font-normal">🎉 Link copiado con exito!</div>
