@@ -30,4 +30,18 @@
         "description": "La colección más grande de códigos de colores de marcas oficiales.",
         "link": "https://brandcolors.net/"
     }
+        ,
+    {
+        "category": "APIs",
+        "name": "Hoppscotch",
+        "description": "Hoppscotch es una suite de desarrollo de API ligera y basada en web. Fue construido desde cero teniendo en cuenta la facilidad de uso y la accesibilidad, proporcionando toda la funcionalidad necesaria para los desarrolladores de API con una interfaz de usuario minimalista y discreta.",
+        "link": "https://hoppscotch.io/"
+    }
+    ,
+    {
+        "category": "Mockups",
+        "name": "Shots",
+        "description": "Cree hermosas presentaciones para su redes sociales, sitio web y más!.",
+        "link": "https://shots.so/"
+    }
 ]
