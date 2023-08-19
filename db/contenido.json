@@ -1,17 +1,20 @@
 [
     {
+        "id": "0",
         "category": "Frameworks",
         "name": "Tailwind",
-        "description": "Comprende las necesidades y deseos de tus usuarios antes de comenzar a diseñar en Figma.",        
+        "description": "Tailwind CSS es un framework de diseño de código abierto que se centra en la creación de interfaces de usuario eficientes y personalizables. A diferencia de otros frameworks, Tailwind no proporciona componentes predefinidos, en su lugar, se basa en clases utilitarias que representan estilos específicos, lo que permite construir interfaces de manera rápida y modular mediante la combinación de estas clases.",        
         "link": "https://tailwindcss.com/"
     },
     {
+        "id": "1",
         "category": "Frameworks",
         "name": "Bootstrap",
         "description": "Bootstrap es un marco de diseño de código abierto que proporciona herramientas y estilos predefinidos para crear sitios web y aplicaciones móviles de manera rápida y consistente. Fue creado por Twitter y ofrece componentes como botones, formularios, barras de navegación y rejillas responsivas que facilitan la creación de interfaces atractivas y adaptables.",
         "link": "https://getbootstrap.com/"
     },
     {
+        "id": "2",
         "category": "Iconos",
         "name": "FlatIcons",
         "description": "Ofrece una amplia colección de íconos y recursos visuales en un estilo plano y moderno. La plataforma proporciona una variedad de categorías de íconos y ofrece opciones de personalización, como tamaños y formatos de archivo, para adaptarse a las necesidades de diseño de los usuarios.",        
@@ -19,12 +22,14 @@
     }
     ,
     {
+        "id": "3",
         "category": "Frameworks",
         "name": "Atropos",
         "description": "Atropos es una biblioteca ligera, gratuita y de código abierto en JavaScript para crear sorprendentes efectos de desplazamiento en 3D con paralaje y sensibilidad al tacto..",        "link": "https://atroposjs.com/"
     }
     ,
     {
+        "id": "4",
         "category": "Colores",
         "name": "BrandColors",
         "description": "La colección más grande de códigos de colores de marcas oficiales.",
@@ -32,6 +37,7 @@
     }
         ,
     {
+        "id": "5",
         "category": "APIs",
         "name": "Hoppscotch",
         "description": "Hoppscotch es una suite de desarrollo de API ligera y basada en web. Fue construido desde cero teniendo en cuenta la facilidad de uso y la accesibilidad, proporcionando toda la funcionalidad necesaria para los desarrolladores de API con una interfaz de usuario minimalista y discreta.",
@@ -39,6 +45,7 @@
     }
     ,
     {
+        "id": "6",
         "category": "Mockups",
         "name": "Shots",
         "description": "Cree hermosas presentaciones para su redes sociales, sitio web y más!.",
