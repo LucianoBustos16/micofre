@@ -4,27 +4,10 @@ import Layout from '../layouts/Layout.astro';
 import ListCard from '../components/ListCard.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
+import Heading from '../components/Heading.astro';
+import SearchBar from '../components/SearchBar.astro';
 ---
-<script is:inline>
-	// This code is inlined in the head to make dark mode instant & blocking.
-	const getThemePreference = () => {
-		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-			return localStorage.getItem('theme');
-		}
-		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-	};
-	const isDark = getThemePreference() === 'dark';
-	document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
 
-	if (typeof localStorage !== 'undefined') {
-		// Watch the document element and persist user preference when it changes.
-		const observer = new MutationObserver(() => {
-			const isDark = document.documentElement.classList.contains('dark');
-			localStorage.setItem('theme', isDark ? 'dark' : 'light');
-		});
-		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-	}
-</script>
 <Layout title="Welcome to Luchito.">
 
 <Navbar/>
@@ -32,41 +15,28 @@ import Footer from '../components/Footer.astro';
 	<main>
 		
 		<div class="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
-		<h1 class="text-slate-900 font-semibold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white">Welcome to <span class="text-sky-500 font-extrabold dark:text-sky-400">Luchito's</span></h1>
+			<Heading
+				title="Welcome to"
+				highlighted="Luchito"
+				description="Mi biblioteca que puede ayudarte a encontrar herramientas creativas para mejorar tu flujo de trabajo y dar vida a las ideas más rápido."
+			/>
 
-		
-
-
-
-		<section class="text-center px-8 my-20 sm:mt-32 md:my-40">
+		<section class="text-center px-8 my-20 sm:mt-32 md:my-20">
 			<Consejos />
 		</section>
 
-		<section class=" px-8 my-20 sm:mt-32 md:my-40">
-			<form class="my-8">   
-			<label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Buscar</label>
-			<div class="relative">
-				<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-					<svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-					</svg>
-				</div>
-				<input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border  border-gray-300 rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Buscar frameworks, iconos..." required>
-			</div>
-		</form>
-
-		<div id="no-results" class="mt-2 hidden">
-			  <div class="p-4 mb-4 text-sm text-center text-blue-800 rounded-lg bg-blue-100 dark:bg-gray-800 dark:text-blue-400" role="alert">
-				<span class="font-medium">F Ameo!</span> No encontramos lo que buscás!
-			  </div>
-		</div>
-
+		<section class=" px-8 my-20 sm:mt-32 md:my-20">
+			<SearchBar/>
 
 		<div class="grid grid-cols-1">
-
 			<ul role="list" class="grid grid-cols-1 md:grid-cols-3 gap-4" id="card-list">
 					<ListCard/>
 			</ul>
+			<div id="no-results" class="mt-2 hidden">
+				<div class="p-4 mb-4 text-sm text-center text-blue-800 rounded-lg bg-blue-100 dark:bg-blue-100 dark:text-blue-400" role="alert">
+				  <span class="font-medium">F Ameo!</span> No encontramos lo que buscás!
+				</div>
+		  </div>
 		</div>
 		</section>
 
@@ -85,35 +55,6 @@ import Footer from '../components/Footer.astro';
 
  
 	<script is:inline>
-		const cardList = document.getElementById('card-list'); // Obtener la lista de tarjetas
-		const searchInput = document.getElementById('default-search'); // Obtener el campo de búsqueda
-		const noResultsMessage = document.getElementById('no-results'); 
-
-		searchInput.addEventListener('input', function(event) {
-			const searchTerm = event.target.value.toLowerCase(); // Obtener el término de búsqueda en minúsculas
-			let hasResults = false;
-
-			// Iterar a través de las tarjetas y mostrar/ocultar según el término de búsqueda
-			cardList.querySelectorAll('.link-card').forEach(card => {
-				const title = card.querySelector('.card-title').textContent.toLowerCase();
-				const body = card.querySelector('.card-body').textContent.toLowerCase();
-
-				if (title.includes(searchTerm) || body.includes(searchTerm)) {
-					card.style.display = 'block';
-					hasResults = true;
-				} else {
-					card.style.display = 'none';
-				}
-			});
-			// Mostrar u ocultar el mensaje de no resultados
-			if (hasResults) {
-            noResultsMessage.style.display = 'none';
-        } else {
-            noResultsMessage.style.display = 'block';
-        }
-			
-		});
-
 		function copyLink(button) {
         const link = button.getAttribute('data-link');
 
@@ -141,9 +82,38 @@ import Footer from '../components/Footer.astro';
             // Remover el toast después de un tiempo
             setTimeout(() => {
                 toastContainer.removeChild(toast);
-            }, 5000); // Remover el toast después de 5 segundos (ajusta este valor según tus necesidades)
+            }, 5000); // Remover el toast después de 5 segundos
         }
     }
+
+    const cardList = document.getElementById('card-list'); // Obtener la lista de tarjetas
+    const searchInput = document.getElementById('default-search'); // Obtener el campo de búsqueda
+    const noResultsMessage = document.getElementById('no-results'); 
+
+    searchInput.addEventListener('input', function(event) {
+        const searchTerm = event.target.value.toLowerCase(); // Obtener el término de búsqueda en minúsculas
+        let hasResults = false;
+
+        // Iterar a través de las tarjetas y mostrar/ocultar según el término de búsqueda
+        cardList.querySelectorAll('.link-card').forEach(card => {
+            const title = card.querySelector('.card-title').textContent.toLowerCase();
+            const body = card.querySelector('.card-body').textContent.toLowerCase();
+
+            if (title.includes(searchTerm) || body.includes(searchTerm)) {
+                card.style.display = 'block';
+                hasResults = true;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+        // Mostrar u ocultar el mensaje de no resultados
+        if (hasResults) {
+        noResultsMessage.style.display = 'none';
+    } else {
+        noResultsMessage.style.display = 'block';
+    }
+        
+    });
 	</script>
 
 	
