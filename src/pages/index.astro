@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import Heading from '../components/Heading.astro';
 import SearchBar from '../components/SearchBar.astro';
+import ButtonFilter from '../components/ButtonFilter.astro';
 ---
 
 <Layout title="Welcome to Luchito.">
@@ -24,6 +25,13 @@ import SearchBar from '../components/SearchBar.astro';
 		<section class="text-center px-8 my-20 sm:mt-32 md:my-20">
 			<Consejos />
 		</section>
+<!-- 
+        <button class="filter-button" data-filter="todos">Todos</button>
+        <button class="filter-button" data-filter="Frameworks">Frameworks</button>
+        <button class="filter-button" data-filter="Iconos">Iconos</button> -->
+
+        <ButtonFilter/>
+
 
 		<section class=" px-8 my-20 sm:mt-32 md:my-20">
 			<SearchBar/>
@@ -114,6 +122,40 @@ import SearchBar from '../components/SearchBar.astro';
     }
         
     });
+
+    // Obtener todos los botones de filtro
+const filterButtons = document.querySelectorAll('.filter-button');
+
+// Agregar un evento de clic a cada botón de filtro
+filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        // Obtener el filtro del botón
+        const filter = this.getAttribute('data-filter');
+
+        // Obtener todas las tarjetas
+        const cards = document.querySelectorAll('.link-card');
+
+        // Ocultar todas las tarjetas
+        cards.forEach(card => {
+            card.style.display = 'none';
+        });
+
+        // Si el filtro es "Todos", mostrar todas las tarjetas
+        if (filter === 'Todos') {
+            cards.forEach(card => {
+                card.style.display = 'block';
+            });
+        } else {
+            // Mostrar solo las tarjetas que corresponden al filtro
+            const filteredCards = document.querySelectorAll(`.link-card[data-category="${filter}"]`);
+            filteredCards.forEach(card => {
+                card.style.display = 'block';
+            });
+        }
+    });
+});
+
+
 	</script>
 
 	

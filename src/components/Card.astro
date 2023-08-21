@@ -11,8 +11,8 @@ const { href, title, body, category } = Astro.props;
 ---
 
 <div
-  class="p-6 bg-white border border-gray-200 rounded-3xl shadow-md dark:bg-gray-900 dark:border-gray-700 hover:-translate-y-1 hover:shadow-lg transition-all"
-  style="display: inline-block;"
+  class="p-6 inline-block w-full bg-white border border-gray-200 rounded-3xl shadow-md dark:bg-gray-900 dark:border-gray-700 hover:-translate-y-1 hover:shadow-lg transition-all"
+
   >
 
   <img
@@ -23,7 +23,8 @@ const { href, title, body, category } = Astro.props;
   />
   <!-- <span class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">{category}</span> -->
 
-  <a href={href}>
+  
+  <a href={href} target="_blank">
     <h5
       class="card-title mb-2 text-lg font-semibold tracking-tight text-gray-700  dark:text-white"
     >

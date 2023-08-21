@@ -6,7 +6,7 @@ const { href, title, body, category } = Astro.props;
 ---
 
 {data.map(({ name, description, link, category }) => (
-<li class="link-card mb-4" data-category={category}>
+<li class="link-card duration-500 transition-transform  mb-4" data-category={category}>
   
 	<Card
 		href={link}
@@ -16,4 +16,6 @@ const { href, title, body, category } = Astro.props;
 	/>
 </li>
 ))}
+
+
 
