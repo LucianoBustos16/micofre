@@ -13,6 +13,7 @@
     "@astrojs/tailwind": "^4.0.0",
     "astro": "^2.10.3",
     "atropos": "^2.0.2",
+    "flowbite": "^1.8.1",
     "tailwindcss": "^3.3.3"
   }
 }
