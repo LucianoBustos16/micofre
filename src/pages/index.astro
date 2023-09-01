@@ -8,24 +8,17 @@ import Heading from "../components/Heading.astro";
 import SearchBar from "../components/SearchBar.astro";
 import ButtonFilter from "../components/ButtonFilter.astro";
 import Donation from "../components/Donation.astro";
+import Alerts from "../components/Alerts.astro";
 ---
 
 <Layout title="Welcome to Luchito.">
   <Navbar />
 
-  <main>
-    <div class="relative max-w-6xl mx-auto pt-20 sm:pt-24 lg:pt-32">
-      <Heading
-        title="Welcome to"
-        highlighted="Luchito"
-        description="Mi biblioteca que puede ayudarte a encontrar herramientas creativas para mejorar tu flujo de trabajo y dar vida a las ideas más rápido."
-      />
+  <main class="relative max-w-6xl mx-auto pt-20 sm:pt-24 lg:pt-32">
 
-      <section class="text-center p-12 sm:mt-32 md:my-20 bg-gradient-to-r from-violet-950 to-violet-900 rounded-2xl overflow-hidden">
-        <Consejos />
-      </section>
+      <Heading />
 
-
+      <Consejos/>
 
       <section class="my-20 sm:mt-32 md:my-20">
 
@@ -34,24 +27,10 @@ import Donation from "../components/Donation.astro";
         <SearchBar />
 
         <div class="grid grid-cols-1">
-          <ul
-            role="list"
-            class="columns-1 md:columns-2 lg:columns-3 gap-4"
-            id="card-list"
-          >
             <ListCard />
-          </ul>
-          <div id="no-results" class="mt-2 hidden">
-            <div
-              class="p-4 mb-4 text-sm text-center text-blue-800 rounded-lg bg-blue-100 dark:bg-blue-100 dark:text-blue-400"
-              role="alert"
-            >
-              <span class="font-medium">F Ameo!</span> No encontramos lo que buscás!
-            </div>
-          </div>
+            <Alerts highlighted="F Ameo!" description="No encontramos lo que buscás!"/>
         </div>
       </section>
-    </div>
   </main>
 
   <Donation />
