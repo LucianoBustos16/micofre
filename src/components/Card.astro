@@ -13,12 +13,12 @@ interface Props {
 const { href, title, body, category, id } = Astro.props;
 
 ---
-<li class="link-card relative group/item duration-500 transition-transform ease-out mb-4" data-category={category}>
-  <div class="p-6 inline-block w-full bg-white border border-gray-200 rounded-3xl shadow-md dark:bg-gray-900 dark:border-gray-700 group-hover/item:-translate-y-1 group-hover/item:shadow-lg group-hover/item:transition-all ease-out">
+<li class="link-card relative group/item duration-500 transition-all ease-out mb-4" data-category={category}>
+  <div class="p-6 inline-block w-full bg-white border border-gray-200 rounded-3xl shadow-md dark:bg-gray-900 dark:border-gray-700 group-hover/item:-translate-y-1 group-hover/item:shadow-lg group-hover/item:transition-all">
     <header class="flex justify-between  mb-4">
       <div class="bg-white w-16 h-16 p-2 rounded-lg">
         <img
-          class="object-cover rounded-t-lg h-16 md:h-auto w-16 md:rounded-none md:rounded-l-lg"
+          class="object-cover w-16 md:rounded-none md:rounded-l-lg group-hover/item:scale-110 ease-out"
           src={ `/assets/logos/${id}.svg`}
           alt=`Logo de ${title}`
           onerror="this.src='/assets/logos/Atropos.svg';"
@@ -31,7 +31,7 @@ const { href, title, body, category, id } = Astro.props;
 
     </header>
     <div class="flex gap-2 items-center">
-      <a href={href} class="font-semibold text-slate-900">
+      <a href={href} target="_blank" class="font-semibold text-slate-900">
         <span class="absolute inset-0 rounded-xl" aria-hidden="true"></span>
         <h4 class="card-title mb-2 text-xl font-semibold tracking-tight text-gray-700  dark:text-white">
           {title}
