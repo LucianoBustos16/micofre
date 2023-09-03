@@ -1,20 +1,20 @@
 [
     {
-        "id": "0",
+        "id": "Tailwind",
         "category": "Frameworks",
         "name": "Tailwind",
         "description": "Tailwind CSS es un framework de diseño de código abierto que se centra en la creación de interfaces de usuario eficientes y personalizables. A diferencia de otros frameworks, Tailwind no proporciona componentes predefinidos, en su lugar, se basa en clases utilitarias que representan estilos específicos, lo que permite construir interfaces de manera rápida y modular mediante la combinación de estas clases.",        
         "link": "https://tailwindcss.com/"
     },
     {
-        "id": "1",
+        "id": "Bootstrap",
         "category": "Frameworks",
         "name": "Bootstrap",
         "description": "Bootstrap es un marco de diseño de código abierto que proporciona herramientas y estilos predefinidos para crear sitios web y aplicaciones móviles de manera rápida y consistente. Fue creado por Twitter y ofrece componentes como botones, formularios, barras de navegación y rejillas responsivas que facilitan la creación de interfaces atractivas y adaptables.",
         "link": "https://getbootstrap.com/"
     },
     {
-        "id": "2",
+        "id": "FlatIcons",
         "category": "Iconos",
         "name": "FlatIcons",
         "description": "Ofrece una amplia colección de íconos y recursos visuales en un estilo plano y moderno. La plataforma proporciona una variedad de categorías de íconos y ofrece opciones de personalización, como tamaños y formatos de archivo, para adaptarse a las necesidades de diseño de los usuarios.",        
@@ -22,14 +22,14 @@
     }
     ,
     {
-        "id": "3",
+        "id": "Atropos",
         "category": "Frameworks",
         "name": "Atropos",
         "description": "Atropos es una biblioteca ligera, gratuita y de código abierto en JavaScript para crear sorprendentes efectos de desplazamiento en 3D con paralaje y sensibilidad al tacto..",        "link": "https://atroposjs.com/"
     }
     ,
     {
-        "id": "4",
+        "id": "BrandColors",
         "category": "Colores",
         "name": "BrandColors",
         "description": "La colección más grande de códigos de colores de marcas oficiales.",
@@ -37,7 +37,7 @@
     }
         ,
     {
-        "id": "5",
+        "id": "Hoppscotch",
         "category": "APIs",
         "name": "Hoppscotch",
         "description": "Hoppscotch es una suite de desarrollo de API ligera y basada en web. Fue construido desde cero teniendo en cuenta la facilidad de uso y la accesibilidad, proporcionando toda la funcionalidad necesaria para los desarrolladores de API con una interfaz de usuario minimalista y discreta.",
@@ -45,10 +45,98 @@
     }
     ,
     {
-        "id": "6",
+        "id":"Shots",
         "category": "Mockups",
         "name": "Shots",
         "description": "Cree hermosas presentaciones para su redes sociales, sitio web y más!.",
         "link": "https://shots.so/"
+    }
+    ,
+    {
+        "id":"Multicolor-Gradients",
+        "category": "Colores",
+        "name": "Multicolor Gradients",
+        "description": "Gradients CSS de múltiples capas de código abierto con descargas en formato JPG.",
+        "link": "https://codioful.com/"
+    }
+    ,
+    {
+        "id": "ColorBox",
+        "category": "Colores",
+        "name": "ColorBox",
+        "description": "Una herramienta para generar conjuntos de colores de código abierto.",
+        "link": "https://colorbox.io/"
+    }
+    ,
+    {
+        "id": "Color-Hunt",
+        "category": "Colores",
+        "name": "Color Hunt",
+        "description": "Una colección seleccionada de colores hermosos, actualizada diariamente.",
+        "link": "https://colorhunt.co/"
+    }
+    ,
+    {
+        "id":"Cccolor",
+        "category": "Colores",
+        "name": "Cccolor",
+        "description": "Un selector de colores limpio y sencillo para diseñadores web.",
+        "link": "https://fffuel.co/cccolor/"
+    }
+    ,
+    {
+        "id":"Eva-Design",
+        "category": "Colores",
+        "name": "Eva Design",
+        "description": "Eva Design es un generador de colores basado en aprendizaje profundo.",
+        "link": "https://colors.eva.design/"
+    }
+    ,
+    {
+        "id":"Happy-Hues",
+        "category": "Colores",
+        "name": "Happy Hues",
+        "description": "Happy Hues es una colección cuidadosamente seleccionada de colores en contexto.",
+        "link": "https://www.happyhues.co/"
+    }
+    ,
+    {
+        "id": "Khroma",
+        "category": "Colores",
+        "name": "Khroma",
+        "description": "Utiliza Inteligencia Artificial para aprender qué colores te gustan y crea paletas.",
+        "link": "https://www.khroma.co/"
+    }
+    ,
+    {
+        "id":"Coolors",
+        "category": "Colores",
+        "name": "Coolors",
+        "description": "El generador de esquemas de colores súper rápido.",
+        "link": "https://coolors.co/"
+    }
+    ,
+    {
+        "id":"Culrs",
+        "category": "Colores",
+        "name": "Culrs",
+        "description": "Paletas de colores cuidadosamente diseñadas y fáciles de usar.",
+        "link": "https://culrs.com/"
+    }
+    ,
+    {
+        "id": "Gradient-Hunt",
+        "category": "Colores",
+        "name": "Gradient Hunt",
+        "description": "Una plataforma gratuita y abierta para inspiración en colores.",
+        "link": "https://gradienthunt.com/"
+    }
+    ,
+    {
+        "id": "CSS-Gradient",
+        "category": "Colores",
+        "name": "CSS Gradient",
+        "description": "CSS Gradient es un sitio web encantador dedicado a los gradientes en CSS.",
+        "link": "https://cssgradient.io/"
     }
 ]

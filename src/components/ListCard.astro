@@ -2,11 +2,13 @@
 import Card from '../components/Card.astro';
 import data from '../../db/contenido.json';
 
-const { href, title, body, category } = Astro.props;
+// Ordena los objetos en 'data' en función del campo 'name'
+data.sort((a, b) => a.name.localeCompare(b.name));
+
 ---
 
 <ul role="list" class="columns-1 md:columns-2 lg:columns-3 gap-4" id="card-list">
-	{data.map(({ name, description, link, category }) => (
+	{data.map(({ name, description, link, category, id }) => (
 	<li class="link-card duration-500 transition-transform   mb-4" data-category={category}>
 	  
 		<Card
@@ -14,6 +16,7 @@ const { href, title, body, category } = Astro.props;
 			title={name}
 			body={description}
 			category={category}
+			id={id}
 		/>
 	</li>
 	))}
