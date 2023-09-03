@@ -9,7 +9,6 @@ data.sort((a, b) => a.name.localeCompare(b.name));
 
 <ul role="list" class="columns-1 md:columns-2 lg:columns-3 gap-4" id="card-list">
 	{data.map(({ name, description, link, category, id }) => (
-	<li class="link-card duration-500 transition-transform   mb-4" data-category={category}>
 	  
 		<Card
 			href={link}
@@ -18,7 +17,6 @@ data.sort((a, b) => a.name.localeCompare(b.name));
 			category={category}
 			id={id}
 		/>
-	</li>
 	))}
 	
 </ul>
