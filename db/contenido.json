@@ -3,21 +3,21 @@
         "id": "Tailwind",
         "category": "Frameworks",
         "name": "Tailwind",
-        "description": "Tailwind CSS es un framework de diseño de código abierto que se centra en la creación de interfaces de usuario eficientes y personalizables. A diferencia de otros frameworks, Tailwind no proporciona componentes predefinidos, en su lugar, se basa en clases utilitarias que representan estilos específicos, lo que permite construir interfaces de manera rápida y modular mediante la combinación de estas clases.",        
+        "description": "Tailwind CSS: framework de diseño de código abierto que se basa en clases utilitarias para crear interfaces personalizables y eficientes.",
         "link": "https://tailwindcss.com/"
     },
     {
         "id": "Bootstrap",
         "category": "Frameworks",
         "name": "Bootstrap",
-        "description": "Bootstrap es un marco de diseño de código abierto que proporciona herramientas y estilos predefinidos para crear sitios web y aplicaciones móviles de manera rápida y consistente. Fue creado por Twitter y ofrece componentes como botones, formularios, barras de navegación y rejillas responsivas que facilitan la creación de interfaces atractivas y adaptables.",
+        "description": "Bootstrap: marco de diseño de código abierto para crear sitios web y apps rápidamente con componentes y estilos predefinidos.",
         "link": "https://getbootstrap.com/"
     },
     {
         "id": "FlatIcons",
         "category": "Iconos",
         "name": "FlatIcons",
-        "description": "Ofrece una amplia colección de íconos y recursos visuales en un estilo plano y moderno. La plataforma proporciona una variedad de categorías de íconos y ofrece opciones de personalización, como tamaños y formatos de archivo, para adaptarse a las necesidades de diseño de los usuarios.",        
+        "description": "Ofrece una gran variedad de íconos y recursos visuales en un estilo plano y moderno, con opciones de personalización de tamaño y formato.",
         "link": "https://www.flaticon.com/"
     }
     ,
@@ -25,7 +25,8 @@
         "id": "Atropos",
         "category": "Frameworks",
         "name": "Atropos",
-        "description": "Atropos es una biblioteca ligera, gratuita y de código abierto en JavaScript para crear sorprendentes efectos de desplazamiento en 3D con paralaje y sensibilidad al tacto..",        "link": "https://atroposjs.com/"
+        "description": "Atropos: librería JS gratuita y ligera para efectos 3D de paralaje y desplazamiento táctil.",
+        "link": "https://atroposjs.com/"
     }
     ,
     {
@@ -40,7 +41,7 @@
         "id": "Hoppscotch",
         "category": "APIs",
         "name": "Hoppscotch",
-        "description": "Hoppscotch es una suite de desarrollo de API ligera y basada en web. Fue construido desde cero teniendo en cuenta la facilidad de uso y la accesibilidad, proporcionando toda la funcionalidad necesaria para los desarrolladores de API con una interfaz de usuario minimalista y discreta.",
+        "description": "Hoppscotch: suite web ligera para desarrollo de API, enfocada en facilidad de uso, accesibilidad y una interfaz minimalista.",
         "link": "https://hoppscotch.io/"
     }
     ,

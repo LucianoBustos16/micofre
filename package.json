@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/partytown": "^2.0.0",
     "@astrojs/tailwind": "^4.0.0",
     "astro": "^2.10.3",
     "atropos": "^2.0.2",
