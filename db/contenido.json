@@ -140,4 +140,12 @@
         "description": "CSS Gradient es un sitio web encantador dedicado a los gradientes en CSS.",
         "link": "https://cssgradient.io/"
     }
+        ,
+    {
+        "id": "LDRS",
+        "category": "Library",
+        "name": "UI Ball: LDRS",
+        "description": "La mejor colección de LOADERS para tu web gratuitas y de código abierto para tu próximo proyecto.",
+        "link": "https://uiball.com/ldrs/"
+    }
 ]
