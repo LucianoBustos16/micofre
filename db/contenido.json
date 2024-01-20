@@ -156,4 +156,20 @@
         "description": "BentoGrids es una colección seleccionada de diseños bento para su inspiración.",
         "link": "https://bentogrids.com/"
     }
+    ,
+    {
+        "id": "SVGOMG",
+        "category": "Tools",
+        "name": "SVGOMG",
+        "description": "Compresión fácil y visual de imágenes SVG.",
+        "link": "https://jakearchibald.github.io/svgomg/"
+    }
+    ,
+    {
+        "id": "Squoosh",
+        "category": "Tools",
+        "name": "Squoosh",
+        "description": "Squoosh es un optimizador de imágenes con diferentes códecs en su navegador..",
+        "link": "https://squoosh.app/"
+    }
 ]
