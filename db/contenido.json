@@ -148,4 +148,12 @@
         "description": "La mejor colección de LOADERS para tu web gratuitas y de código abierto para tu próximo proyecto.",
         "link": "https://uiball.com/ldrs/"
     }
+    ,
+    {
+        "id": "Bento",
+        "category": "Coleccion",
+        "name": "Bento Grid",
+        "description": "BentoGrids es una colección seleccionada de diseños bento para su inspiración.",
+        "link": "https://bentogrids.com/"
+    }
 ]
