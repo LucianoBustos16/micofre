@@ -172,4 +172,12 @@
         "description": "Squoosh es un optimizador de imágenes con diferentes códecs en su navegador..",
         "link": "https://squoosh.app/"
     }
+     ,
+    {
+        "id": "CSS-Separator",
+        "category": "Tools",
+        "name": "CSS Section Separator Generator",
+        "description": "Una colección de separadores de secciones CSS personalizables, con la posibilidad de copiar fácilmente el código.",
+        "link": "https://wweb.dev/resources/css-separator-generator"
+    }
 ]
