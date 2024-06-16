@@ -1,0 +1,3 @@
+# Permitir a todos los rastreadores acceder a todo el sitio
+User-agent: *
+Disallow:
