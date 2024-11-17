@@ -173,5 +173,12 @@
     "name": "prueba",
     "description": "esta es la prueba definitiva para saber si funcionas",
     "link": "https://micofre.luchito.com.ar/"
+  },
+  {
+    "id": "prueba",
+    "category": "framework",
+    "name": "prueba",
+    "description": "esta es la prueba definitiva para saber si funcionas",
+    "link": "https://micofre.luchito.com.ar/"
   }
 ]
