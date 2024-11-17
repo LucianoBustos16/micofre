@@ -166,5 +166,12 @@
     "name": "Flagpack",
     "description": "Colecci\u00c3\u00b3n de banderas de pa\u00c3\u00adses en formato SVG y Figma",
     "link": "https://flagpack.xyz/"
+  },
+  {
+    "id": "prueba",
+    "category": "framework",
+    "name": "prueba",
+    "description": "esta es la prueba definitiva para saber si funcionas",
+    "link": "https://micofre.luchito.com.ar/"
   }
 ]
