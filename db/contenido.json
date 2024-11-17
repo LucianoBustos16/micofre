@@ -1,170 +1,226 @@
 [
-    {
-      "id": "Tailwind",
-      "category": "Frameworks",
-      "name": "Tailwind",
-      "description": "Tailwind CSS: framework de diseño de código abierto que se basa en clases utilitarias para crear interfaces personalizables y eficientes.",
-      "link": "https://tailwindcss.com/"
-    },
-    {
-      "id": "Bootstrap",
-      "category": "Frameworks",
-      "name": "Bootstrap",
-      "description": "Bootstrap: marco de diseño de código abierto para crear sitios web y apps rápidamente con componentes y estilos predefinidos.",
-      "link": "https://getbootstrap.com/"
-    },
-    {
-      "id": "FlatIcons",
-      "category": "Iconos",
-      "name": "FlatIcons",
-      "description": "Ofrece una gran variedad de íconos y recursos visuales en un estilo plano y moderno, con opciones de personalización de tamaño y formato.",
-      "link": "https://www.flaticon.com/"
-    },
-    {
-      "id": "Atropos",
-      "category": "Frameworks",
-      "name": "Atropos",
-      "description": "Librería JS gratuita y ligera para efectos 3D de paralaje y desplazamiento táctil.",
-      "link": "https://atroposjs.com/"
-    },
-    {
-      "id": "BrandColors",
-      "category": "Colores",
-      "name": "BrandColors",
-      "description": "La colección más grande de códigos de colores de marcas oficiales.",
-      "link": "https://brandcolors.net/"
-    },
-    {
-      "id": "Hoppscotch",
-      "category": "APIs",
-      "name": "Hoppscotch",
-      "description": "Hoppscotch: suite web ligera para desarrollo de API, enfocada en facilidad de uso, accesibilidad y una interfaz minimalista.",
-      "link": "https://hoppscotch.io/"
-    },
-    {
-      "id": "Shots",
-      "category": "Mockups",
-      "name": "Shots",
-      "description": "Cree hermosas presentaciones para su redes sociales, sitio web y más!.",
-      "link": "https://shots.so/"
-    },
-    {
-      "id": "Multicolor-Gradients",
-      "category": "Colores",
-      "name": "Multicolor Gradients",
-      "description": "Gradients CSS de múltiples capas de código abierto con descargas en formato JPG.",
-      "link": "https://codioful.com/"
-    },
-    {
-      "id": "ColorBox",
-      "category": "Colores",
-      "name": "ColorBox",
-      "description": "Una herramienta para generar conjuntos de colores de código abierto.",
-      "link": "https://colorbox.io/"
-    },
-    {
-      "id": "Color-Hunt",
-      "category": "Colores",
-      "name": "Color Hunt",
-      "description": "Una colección seleccionada de colores hermosos, actualizada diariamente.",
-      "link": "https://colorhunt.co/"
-    },
-    {
-      "id": "Cccolor",
-      "category": "Colores",
-      "name": "Cccolor",
-      "description": "Un selector de colores limpio y sencillo para diseñadores web.",
-      "link": "https://fffuel.co/cccolor/"
-    },
-    {
-      "id": "Eva-Design",
-      "category": "Colores",
-      "name": "Eva Design",
-      "description": "Eva Design es un generador de colores basado en aprendizaje profundo.",
-      "link": "https://colors.eva.design/"
-    },
-    {
-      "id": "Happy-Hues",
-      "category": "Colores",
-      "name": "Happy Hues",
-      "description": "Happy Hues es una colección cuidadosamente seleccionada de colores en contexto.",
-      "link": "https://www.happyhues.co/"
-    },
-    {
-      "id": "Khroma",
-      "category": "Colores",
-      "name": "Khroma",
-      "description": "Utiliza Inteligencia Artificial para aprender qué colores te gustan y crea paletas.",
-      "link": "https://www.khroma.co/"
-    },
-    {
-      "id": "Coolors",
-      "category": "Colores",
-      "name": "Coolors",
-      "description": "El generador de esquemas de colores súper rápido.",
-      "link": "https://coolors.co/"
-    },
-    {
-      "id": "Culrs",
-      "category": "Colores",
-      "name": "Culrs",
-      "description": "Paletas de colores cuidadosamente diseñadas y fáciles de usar.",
-      "link": "https://culrs.com/"
-    },
-    {
-      "id": "Gradient-Hunt",
-      "category": "Colores",
-      "name": "Gradient Hunt",
-      "description": "Una plataforma gratuita y abierta para inspiración en colores.",
-      "link": "https://gradienthunt.com/"
-    },
-    {
-      "id": "CSS-Gradient",
-      "category": "Colores",
-      "name": "CSS Gradient",
-      "description": "CSS Gradient es un sitio web encantador dedicado a los gradientes en CSS.",
-      "link": "https://cssgradient.io/"
-    },
-    {
-      "id": "LDRS",
-      "category": "Library",
-      "name": "UI Ball: LDRS",
-      "description": "La mejor colección de LOADERS para tu web gratuitas y de código abierto para tu próximo proyecto.",
-      "link": "https://uiball.com/ldrs/"
-    },
-    {
-      "id": "Bento",
-      "category": "Coleccion",
-      "name": "Bento Grid",
-      "description": "BentoGrids es una colección seleccionada de diseños bento para su inspiración.",
-      "link": "https://bentogrids.com/"
-    },
-    {
-      "id": "SVGOMG",
-      "category": "Tools",
-      "name": "SVGOMG",
-      "description": "Compresión fácil y visual de imágenes SVG.",
-      "link": "https://jakearchibald.github.io/svgomg/"
-    },
-    {
-      "id": "Squoosh",
-      "category": "Tools",
-      "name": "Squoosh",
-      "description": "Squoosh es un optimizador de imágenes con diferentes códecs en su navegador..",
-      "link": "https://squoosh.app/"
-    },
-    {
-      "id": "CSS-Separator",
-      "category": "Tools",
-      "name": "CSS Section Separator Generator",
-      "description": "Una colección de separadores de secciones CSS personalizables, con la posibilidad de copiar fácilmente el código.",
-      "link": "https://wweb.dev/resources/css-separator-generator"
-    },
-    {
-      "id": "Flagpack",
-      "category": "Coleccion",
-      "name": "Flagpack",
-      "description": "Colección de banderas de países en formato SVG y Figma",
-      "link": "https://flagpack.xyz/"
-    }
+  {
+    "id": "Tailwind",
+    "category": "Frameworks",
+    "name": "Tailwind",
+    "description": "Tailwind CSS: framework de dise\u00c3\u00b1o de c\u00c3\u00b3digo abierto que se basa en clases utilitarias para crear interfaces personalizables y eficientes.",
+    "link": "https://tailwindcss.com/"
+  },
+  {
+    "id": "Bootstrap",
+    "category": "Frameworks",
+    "name": "Bootstrap",
+    "description": "Bootstrap: marco de dise\u00c3\u00b1o de c\u00c3\u00b3digo abierto para crear sitios web y apps r\u00c3\u00a1pidamente con componentes y estilos predefinidos.",
+    "link": "https://getbootstrap.com/"
+  },
+  {
+    "id": "FlatIcons",
+    "category": "Iconos",
+    "name": "FlatIcons",
+    "description": "Ofrece una gran variedad de \u00c3\u00adconos y recursos visuales en un estilo plano y moderno, con opciones de personalizaci\u00c3\u00b3n de tama\u00c3\u00b1o y formato.",
+    "link": "https://www.flaticon.com/"
+  },
+  {
+    "id": "Atropos",
+    "category": "Frameworks",
+    "name": "Atropos",
+    "description": "Librer\u00c3\u00ada JS gratuita y ligera para efectos 3D de paralaje y desplazamiento t\u00c3\u00a1ctil.",
+    "link": "https://atroposjs.com/"
+  },
+  {
+    "id": "BrandColors",
+    "category": "Colores",
+    "name": "BrandColors",
+    "description": "La colecci\u00c3\u00b3n m\u00c3\u00a1s grande de c\u00c3\u00b3digos de colores de marcas oficiales.",
+    "link": "https://brandcolors.net/"
+  },
+  {
+    "id": "Hoppscotch",
+    "category": "APIs",
+    "name": "Hoppscotch",
+    "description": "Hoppscotch: suite web ligera para desarrollo de API, enfocada en facilidad de uso, accesibilidad y una interfaz minimalista.",
+    "link": "https://hoppscotch.io/"
+  },
+  {
+    "id": "Shots",
+    "category": "Mockups",
+    "name": "Shots",
+    "description": "Cree hermosas presentaciones para su redes sociales, sitio web y m\u00c3\u00a1s!.",
+    "link": "https://shots.so/"
+  },
+  {
+    "id": "Multicolor-Gradients",
+    "category": "Colores",
+    "name": "Multicolor Gradients",
+    "description": "Gradients CSS de m\u00c3\u00baltiples capas de c\u00c3\u00b3digo abierto con descargas en formato JPG.",
+    "link": "https://codioful.com/"
+  },
+  {
+    "id": "ColorBox",
+    "category": "Colores",
+    "name": "ColorBox",
+    "description": "Una herramienta para generar conjuntos de colores de c\u00c3\u00b3digo abierto.",
+    "link": "https://colorbox.io/"
+  },
+  {
+    "id": "Color-Hunt",
+    "category": "Colores",
+    "name": "Color Hunt",
+    "description": "Una colecci\u00c3\u00b3n seleccionada de colores hermosos, actualizada diariamente.",
+    "link": "https://colorhunt.co/"
+  },
+  {
+    "id": "Cccolor",
+    "category": "Colores",
+    "name": "Cccolor",
+    "description": "Un selector de colores limpio y sencillo para dise\u00c3\u00b1adores web.",
+    "link": "https://fffuel.co/cccolor/"
+  },
+  {
+    "id": "Eva-Design",
+    "category": "Colores",
+    "name": "Eva Design",
+    "description": "Eva Design es un generador de colores basado en aprendizaje profundo.",
+    "link": "https://colors.eva.design/"
+  },
+  {
+    "id": "Happy-Hues",
+    "category": "Colores",
+    "name": "Happy Hues",
+    "description": "Happy Hues es una colecci\u00c3\u00b3n cuidadosamente seleccionada de colores en contexto.",
+    "link": "https://www.happyhues.co/"
+  },
+  {
+    "id": "Khroma",
+    "category": "Colores",
+    "name": "Khroma",
+    "description": "Utiliza Inteligencia Artificial para aprender qu\u00c3\u00a9 colores te gustan y crea paletas.",
+    "link": "https://www.khroma.co/"
+  },
+  {
+    "id": "Coolors",
+    "category": "Colores",
+    "name": "Coolors",
+    "description": "El generador de esquemas de colores s\u00c3\u00baper r\u00c3\u00a1pido.",
+    "link": "https://coolors.co/"
+  },
+  {
+    "id": "Culrs",
+    "category": "Colores",
+    "name": "Culrs",
+    "description": "Paletas de colores cuidadosamente dise\u00c3\u00b1adas y f\u00c3\u00a1ciles de usar.",
+    "link": "https://culrs.com/"
+  },
+  {
+    "id": "Gradient-Hunt",
+    "category": "Colores",
+    "name": "Gradient Hunt",
+    "description": "Una plataforma gratuita y abierta para inspiraci\u00c3\u00b3n en colores.",
+    "link": "https://gradienthunt.com/"
+  },
+  {
+    "id": "CSS-Gradient",
+    "category": "Colores",
+    "name": "CSS Gradient",
+    "description": "CSS Gradient es un sitio web encantador dedicado a los gradientes en CSS.",
+    "link": "https://cssgradient.io/"
+  },
+  {
+    "id": "LDRS",
+    "category": "Library",
+    "name": "UI Ball: LDRS",
+    "description": "La mejor colecci\u00c3\u00b3n de LOADERS para tu web gratuitas y de c\u00c3\u00b3digo abierto para tu pr\u00c3\u00b3ximo proyecto.",
+    "link": "https://uiball.com/ldrs/"
+  },
+  {
+    "id": "Bento",
+    "category": "Coleccion",
+    "name": "Bento Grid",
+    "description": "BentoGrids es una colecci\u00c3\u00b3n seleccionada de dise\u00c3\u00b1os bento para su inspiraci\u00c3\u00b3n.",
+    "link": "https://bentogrids.com/"
+  },
+  {
+    "id": "SVGOMG",
+    "category": "Tools",
+    "name": "SVGOMG",
+    "description": "Compresi\u00c3\u00b3n f\u00c3\u00a1cil y visual de im\u00c3\u00a1genes SVG.",
+    "link": "https://jakearchibald.github.io/svgomg/"
+  },
+  {
+    "id": "Squoosh",
+    "category": "Tools",
+    "name": "Squoosh",
+    "description": "Squoosh es un optimizador de im\u00c3\u00a1genes con diferentes c\u00c3\u00b3decs en su navegador..",
+    "link": "https://squoosh.app/"
+  },
+  {
+    "id": "CSS-Separator",
+    "category": "Tools",
+    "name": "CSS Section Separator Generator",
+    "description": "Una colecci\u00c3\u00b3n de separadores de secciones CSS personalizables, con la posibilidad de copiar f\u00c3\u00a1cilmente el c\u00c3\u00b3digo.",
+    "link": "https://wweb.dev/resources/css-separator-generator"
+  },
+  {
+    "id": "Flagpack",
+    "category": "Coleccion",
+    "name": "Flagpack",
+    "description": "Colecci\u00c3\u00b3n de banderas de pa\u00c3\u00adses en formato SVG y Figma",
+    "link": "https://flagpack.xyz/"
+  },
+  {
+    "id": "test",
+    "category": "test",
+    "name": "test",
+    "description": "test",
+    "link": "test"
+  },
+  {
+    "id": "test",
+    "category": "test",
+    "name": "test",
+    "description": "test",
+    "link": "test"
+  },
+  {
+    "id": "test",
+    "category": "test",
+    "name": "test",
+    "description": "test",
+    "link": "test"
+  },
+  {
+    "id": "test",
+    "category": "test",
+    "name": "test",
+    "description": "test",
+    "link": "test"
+  },
+  {
+    "id": "test",
+    "category": "test",
+    "name": "test",
+    "description": "test",
+    "link": "test"
+  },
+  {
+    "id": "test",
+    "category": "test",
+    "name": "test",
+    "description": "test",
+    "link": "test"
+  },
+  {
+    "id": "test",
+    "category": "test",
+    "name": "test",
+    "description": "test",
+    "link": "test"
+  },
+  {
+    "id": "test",
+    "category": "test",
+    "name": "test",
+    "description": "test",
+    "link": "test"
+  }
 ]
