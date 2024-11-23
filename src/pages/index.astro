@@ -11,7 +11,7 @@ import Donation from "../components/Donation.astro";
 import Alerts from "../components/Alerts.astro";
 ---
 
-<Layout title="Welcome to Luchito.">
+<Layout title="Welcome to Mi Cofre.">
   <Navbar />
 
   <main class="relative max-w-6xl mx-auto pt-20 sm:pt-24 lg:pt-32">
@@ -137,16 +137,13 @@ import Alerts from "../components/Alerts.astro";
 
             // Evento de la rueda del mouse
             document.addEventListener('wheel', function(event) {
-            console.log('Rueda del mouse movida');
         }, { passive: true });
 
         // Eventos táctiles
         document.addEventListener('touchstart', function(event) {
-            console.log('Pantalla tocada - touchstart');
         }, { passive: true });
 
         document.addEventListener('touchmove', function(event) {
-            console.log('Pantalla movida - touchmove');
         }, { passive: true });
   </script>
 </Layout>
