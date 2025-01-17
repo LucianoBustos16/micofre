@@ -201,5 +201,12 @@
     "name": "ant design",
     "description": "el ds de ant",
     "link": "https://ant.design/"
+  },
+  {
+    "id": "prueba",
+    "category": "frameworks",
+    "name": "prueba",
+    "description": "esto es una prueba con el boy main",
+    "link": "link.com"
   }
 ]
