@@ -187,5 +187,12 @@
     "name": "esto es algo funcional",
     "description": "esto esta en la nube en un dcoker",
     "link": "railway.app"
+  },
+  {
+    "id": "esto-es-una-de-las-ultimas-pruebas",
+    "category": "test",
+    "name": "esto es una de las ultimas pruebas",
+    "description": "la descripcion es muy corta, esta es una ultima prueba para checkear que este estable y hacerlo un doker, y subirlo a la nube pa que ande 24/7 en algun lado del mundo",
+    "link": "railway.app"
   }
 ]
