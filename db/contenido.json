@@ -173,5 +173,12 @@
     "name": "test",
     "description": "esto es una prueba",
     "link": "https://fast.com/es/"
+  },
+  {
+    "id": "frameworks",
+    "category": "-edit category",
+    "name": "frameworks",
+    "description": "test",
+    "link": "que sigue"
   }
 ]
