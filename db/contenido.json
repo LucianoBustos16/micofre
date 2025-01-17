@@ -194,5 +194,12 @@
     "name": "esto es una de las ultimas pruebas",
     "description": "la descripcion es muy corta, esta es una ultima prueba para checkear que este estable y hacerlo un doker, y subirlo a la nube pa que ande 24/7 en algun lado del mundo",
     "link": "railway.app"
+  },
+  {
+    "id": "ant-design",
+    "category": "ds",
+    "name": "ant design",
+    "description": "el ds de ant",
+    "link": "https://ant.design/"
   }
 ]
