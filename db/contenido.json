@@ -173,5 +173,10 @@
     "name": "test",
     "description": "esto es una prueba",
     "link": "https://fast.com/es/"
-  }
+  },
+  "id",
+  "category",
+  "name",
+  "description",
+  "link"
 ]
