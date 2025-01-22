@@ -166,5 +166,12 @@
     "name": "Flagpack",
     "description": "Colección de banderas de países en formato SVG y Figma",
     "link": "https://flagpack.xyz/"
+  },
+  {
+    "id": "css-grid-generator",
+    "category": "tools",
+    "name": "css grid generator",
+    "description": "el generador de cuadrículas css es una herramienta que ayuda a los desarrolladores a crear diseños de cuadrículas css personalizados con mayor facilidad. el generador permite a los usuarios especificar la cantidad de columnas y filas y el tamaño del margen.",
+    "link": "https://cssgridgenerator.io/"
   }
 ]
